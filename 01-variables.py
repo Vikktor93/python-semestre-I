@@ -6,28 +6,30 @@
 #Un simple print
 print("Hola soy Constanza!")
 
-#Declarando dos variable
+#01-DECLARANDO UNA VARIABLE
 nombre = "Constanza"
 name = "Victor"
 
-#Impresion de una variable
+#02-IMPRESION DE UNA VARIABLE
 print(nombre)
 print("Hola soy",nombre)
 
 #Declarando una tercera variable tipo númerico
 edad = 29
 
-#Impresion de la tercera variable
+#03-IMPRESION DE TEXTO + VARIABLE
 print("Mi edad es de",edad)
 
-###Imprimiendo 2 variables en una misma sentencia (concatenación)
+#04-IMPRIMIENDO 2 VARIABLES EN UNA MISMA LINEA (concatenación)
 #print("Hola mi nombre es" + nombre + "y tengo" + edad + "años") #Esta sentencia da error
 print("Hola mi nombre es"+" " +name+" "+"y tengo"+" "+str(edad)+" "+"años")
 
-##Actualizando la variable nombre (Mutable)
+##05-ACTUALIZANDO LA VARIABLE NOMBRE (Mutable)
 nombre = "Diego"
 print ("Hola mi nuevo nombre es", nombre)
 
-#Utilizando la instrucción input
+#06-UTILIZANDO LA INSTRUCCIÓN INPUT
 nombre1 = input("¿Cuál es tu nombre?\n")
 print("Tu nombre es:",nombre1)
+
+
