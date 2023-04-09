@@ -4,6 +4,8 @@
    <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white"/>
 </p>
 
+<img src="./assets/img/headerpython.png"/>
+
 ## Descripción del Proyecto
 
 Este repositorio contiene información para trabajar con Python Básico desde cero. 
@@ -15,8 +17,8 @@ algoritmos y los distintos tipos de datos.
 
 ## Enlaces de Interés
 
-- Web oficial de Python[Instalacion Python][python]
-- Visual Studio Code[Editor de Texto][vscode]
+- Web oficial de Python [(Instalacion Python)][python]
+- Visual Studio Code [(Editor de Texto)][vscode]
 
 [python]: https://www.python.org/downloads/
 [vscode]: https://code.visualstudio.com/download
