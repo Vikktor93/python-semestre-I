@@ -30,7 +30,7 @@ print("Hola mi nombre es"+" " +name+" "+"y tengo"+" "+str(edad)+" "+"años")
 nombre = "Diego"
 print ("Hola mi nuevo nombre es", nombre)
 
-#06-¿VARIABLES EN UNA SOLA LINEA?
+#06-¿VARIABLES EN UNA SOLA LINEA? (No es muy recomendable, solo en ciertas situaciones)
 ciudad, region, pais, year = "Puerto Montt", "Los Lagos", "Chile", 2010.
 print("Yo naci en la ciudad de", ciudad,", region de",region,pais,", el año",int(year))
 

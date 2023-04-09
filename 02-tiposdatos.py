@@ -1,23 +1,28 @@
 ###GUIA RÁPIDA TIPOS DE DATOS EN PYTHON
 
 #01-DATOS DE TIPO NÚMERICO
-estatura = 1.71
-peso = 70.5
-complejo =  1 + 4j
+edad = 29 #entero
+estatura = 1.71 #real
+peso = 70.5 #real
+complejo =  1 + 4j #complejo
 
 print("01-DATOS NÚMERICOS");
 print("Mi estatura es de",estatura,"m","y mi peso de",peso,"kg")
 print("Impresion de un número complejo:",complejo,"\n")
 
-
 #Transformando un real a entero
 print("Transformando un valor real a entero:",int(peso))
+
+#Transformando un entero a real
+print("Transformando un valor entero a real:",float(edad))
 
 #OPERACION ARITMETICA BÁSICA
 imc = peso/estatura**2
 print("Mi IMC es de:",imc,"\n")
 
-#02- DATOS DE TIPO CADENA DE CARACTERES 
+print("Mi IMC es de: {:.2f}".format(imc),"\n")
+
+#02-DATOS DE TIPO CADENA DE CARACTERES 
 asignatura = "Programación"
 carrera = "Ingenieria Civil en Informática"
 print("02-STRINGS")
@@ -28,7 +33,7 @@ print("La cantidad de caracteres de la palabra", asignatura, "es de:",len(asigna
 print("La cantidad de caracteres de la palabra", carrera, "es de:",len(carrera),"\n")
 
 
-#03- VALORES BOOLEANOS
+#03-VALORES BOOLEANOS
 ampolleta = False
 interruptor = True
 
@@ -37,13 +42,53 @@ print("03-BOOLEANS")
 print(ampolleta,interruptor)
 print("La variable ampolleta es de tipo:",type(interruptor),"\n")
 
-#04- DATOS TIPO ARRAY (Objetos de Tipo Colección)
+#04-DATOS TIPO ARRAY (Objetos de Tipo Colección) - Mutabilidad
 estudiantes = ["Matias", "Marco", "Cristobal", "Sebastián"]
 num = [1,2,3,4,5,6]
-print("04-ARREGLOS")
-print(estudiantes)
-print(num)
+lenguaje = ["Python"]
+data = ['Osorno', {'UV': 'nivel bajo', 'Temp °C': 15}, (-40.5725, -73.1353)]
+print("04-ARREGLOS/LISTAS")
+print("Arreglo de cadena de caracteres:",estudiantes)
+print("Arreglo de números:",num)
+print("Arreglo de un elemento:",lenguaje)
+print("Esto igual es un arreglo o lista:",data)
 
-#05-PALABRAS RESERVADAS
+lenguaje = ["JavaScript"]
+print("Nuevo valor del Arreglo de un elemento:",lenguaje)
+
+#Reasignando el valor del primer elemento de la lista
+estudiantes[0] = "Gabriela"
+print("El arreglo de estudiantes es:",estudiantes)
+
+#¿Qué hace estas funciones?
+print(list("Python"))
+print(list(range(10)))
+print("\n")
+
+
+#05 - TUPLAS - No mutables
+grupo1 = ("Matias","Cristian","Felipe")
+print("05-TUPLAS")
+print(type(grupo1))
+
+#Reasignando el primer elemento de la tupla
+#grupo1[0] = "Constanza"
+#print(grupo1)
+
+
+#06 - SETS
+
+
+#07 - DICCIONARIOS
+
+
+#08-¿Forzando el tipo de dato?
+universidad: str = "Universidad de Los Lagos"
+universidad = 90
+universidad = True
+
+#¿Al final que tipo de dato es la variable universidad?
+
+
 
 
