@@ -2,7 +2,7 @@
 <p align="left">
    <img src="https://img.shields.io/badge/Status-En%20Desarrollo-green?style=plastic">
    <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white"/>
-</p>
+   <img src="https://img.shields.io/badge/Jupyter-%23e58f1a.svg?style=plastic&logo=Jupyter&logoColor=white"/>
 
 <img src="./assets/img/headerpython.png"/>
 

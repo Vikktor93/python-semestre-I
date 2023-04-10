@@ -22,9 +22,12 @@ edad = 29
 #03-IMPRESION DE TEXTO + VARIABLE
 print("Mi edad es de",edad)
 
-#04-IMPRIMIENDO 2 VARIABLES EN UNA MISMA LINEA (concatenación)
+#04-IMPRIMIENDO 2 VARIABLES EN UNA MISMA LINEA (concatenación con signo +, utilizando comas y Formato cadenas literales)
 #print("Hola mi nombre es" + nombre + "y tengo" + edad + "años") #Esta sentencia da error
-print("Hola mi nombre es"+" " +name+" "+"y tengo"+" "+str(edad)+" "+"años")
+
+print("Hola mi nombre es",nombre,"y tengo",edad,"años") #Impresion separando con comas
+print("Hola mi nombre es"+" " +name+" "+"y tengo"+" "+str(edad)+" "+"años") #Concatenación con +
+print(f"Hola mi nombre es {nombre} y tengo {edad} años") #Formato de cadenas literales
 
 ##05-ACTUALIZANDO LA VARIABLE NOMBRE (Mutable)
 nombre = "Diego"
@@ -35,5 +38,5 @@ ciudad, region, pais, year = "Puerto Montt", "Los Lagos", "Chile", 2010.
 print("Yo naci en la ciudad de", ciudad,", region de",region,pais,", el año",int(year))
 
 #07-UTILIZANDO LA INSTRUCCIÓN INPUT
-nombre1 = input("¿Cuál es tu nombre?\n")
-print("Tu nombre es:",nombre1)
+#nombre1 = input("¿Cuál es tu nombre?\n")
+#print("Tu nombre es:",nombre1)
