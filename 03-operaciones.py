@@ -17,7 +17,22 @@ print("Multiplicación entre a * b es:",a * b)
 print("División entre a / b es:",a / b)
 print("El módulo entre a y b es:",a % b)
 print("El cociente entre b / c es:",b // c)
-print("El resultado de b elevado a c (5^4):",b ** c)
+print("El resultado de b elevado a c (5^4):",b ** c,"\n")
+
+#Declarando variables de tipo flotantes
+t = 5.39 #tiempo en segundos
+g = 9.81 #la aceleración de gravedad
+
+#Operaciones aritemeticas con flotantes
+v = g * t
+
+print(f"La velocidad del objeto en caida libre es de: {v} m/s")
+print("La velocidad del objeto en caida libre es de: {:.2f}".format(v)) #1 manera de formatear decimales
+print(f"La velocidad del objeto en caida libre es de: {v:.2f}")         #2 manera de formatear decimales con f-string
+print("La velocidad del objeto en caida libre es de:","%.2f" % v)       #3 utilizando el formateador %f
+print("\n")
+
+
 
 #¿Se puede realizar esta operación? ¿Multiplicar un String por un entero?
 print("Hola" * 5)
