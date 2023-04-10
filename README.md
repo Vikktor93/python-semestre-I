@@ -1,6 +1,6 @@
 # Repositorio Nivel Básico Python
 <p align="left">
-   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   <img src="https://img.shields.io/badge/Status-En%20Desarrollo-green?style=plastic">
    <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white"/>
 </p>
 
@@ -22,3 +22,5 @@ algoritmos y los distintos tipos de datos.
 
 [python]: https://www.python.org/downloads/
 [vscode]: https://code.visualstudio.com/download
+
+
