@@ -28,7 +28,7 @@ print("Mi edad es de", edad)
 #print("Hola mi nombre es" + nombre + "y tengo" + edad + "años") #Esta sentencia da error ¿por qué?
 
 print("Hola mi nombre es",nombre,"y tengo",edad) #Impresion separando con comas
-print("Hola mi nombre es"+" "+name+" "+"y tengo"+str(edad)) #Concatenación con signo +
+print("Hola mi nombre es"+" "+name+" "+"y tengo"+edad) #Concatenación con signo +
 print(f"Hola mi nombre es {nombre} y tengo {edad} años") #Formato de cadenas literales (f-string)
 
 ##05-ACTUALIZANDO LA VARIABLE NOMBRE (Mutabilidad)
