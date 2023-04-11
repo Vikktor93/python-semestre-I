@@ -42,7 +42,7 @@ print("03-BOOLEANS")
 print(ampolleta,interruptor)
 print("La variable ampolleta es de tipo:",type(interruptor),"\n")
 
-#04-DATOS TIPO ARRAY (Objetos de Tipo Colección) - Mutabilidad
+#04-DATOS TIPO ARRAY/LIST (Objetos de Tipo Colección) - Mutabilidad
 estudiantes = ["Matias", "Marco", "Cristobal", "Sebastián"]
 num = [1,2,3,4,5,6]
 lenguaje = ["Python"]
@@ -70,13 +70,30 @@ print("\n")
 grupo1 = ("Matias","Cristian","Felipe")
 print("05-TUPLAS")
 print(type(grupo1))
+print("\n")
 
 #Reasignando el primer elemento de la tupla
 #grupo1[0] = "Constanza"
 #print(grupo1)
 
 
-#06 - SETS
+#06 - SETS (Conjuntos) - Estructura fija
+#Formas de inicializar un Set
+conjunto_colores = set({"Azul","Rojo","Verde"}) #utilizando la funcion set
+conjunto_animales = {"Gato","Perro","Loro"}     #utilizando corchetes
+
+print("06-SETS")
+print(type(conjunto_colores)) #tipo de dato set
+print(type(conjunto_animales)) #tipo de dato set
+print("El primer set contiene los siguientes colores:",conjunto_colores)
+print("El segundo set contiene los siguientes animales:",conjunto_animales)
+
+#print(conjunto[0]) #accediendo al primer elemento del set
+conjunto_colores.add("Celeste")
+print("El set de colores lo conforman:",conjunto_colores) #un set es una estructura desordenada a diferencia de una Lista
+
+conjunto_animales.add("Gato")
+print("El set de animales lo conforman:",conjunto_animales,"\n") #un set no acepta duplicados, a diferencia de las listas que si.
 
 
 #07 - DICCIONARIOS

@@ -1,6 +1,6 @@
 #GUIA RÁPIDA DE OPERACIONES/OPERADORES EN PYTHON
-
 #Partiremos con los operadores más comunes 
+
 #01-OPERADORES ARITMETICOS
 
 #Declarando variables de tipo entero
@@ -32,6 +32,16 @@ print(f"La velocidad del objeto en caida libre es de: {v:.2f}")         #2 maner
 print("La velocidad del objeto en caida libre es de:","%.2f" % v)       #3 utilizando el formateador %f
 print("\n")
 
+#Declarando variables de tipo compleja
+c1 = 4 + 3j
+print(type(c1))
+
+#Creando un número complejo con complex
+c2 = complex(3, -5)
+print("El numero complejo es:",c2)
+
+print(c2.real) #Obteniendo la parte real del número complejo
+print(c2.imag) #Obteniendo la parte imaginaria del número complejo
 
 
 #¿Se puede realizar esta operación? ¿Multiplicar un String por un entero?
@@ -39,9 +49,6 @@ print("Hola" * 5)
 
 #¿y la siguiente multiplicación?
 #print("Hola" * 3.5*2)
-
-
-
 #Si el resultado es un 7 (numero entero), ¿por qué sale error?
 
 #¿y esta operación un poco mas elaborada?
