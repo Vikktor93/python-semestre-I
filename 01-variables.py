@@ -23,14 +23,15 @@ edad = 29
 print("Mi edad es de", edad)
 
 
-#04-IMPRIMIENDO 2 VARIABLES EN UNA MISMA LINEA (concatenación con signo +, utilizando comas y Formato cadenas literales)
-#print("Hola mi nombre es" + nombre + "y tengo" + edad + "años") #Esta sentencia da error
+#04-IMPRIMIENDO 2 VARIABLES EN UNA MISMA LINEA 
+#(concatenación con signo +, utilizando comas y Formato cadenas literales)
+#print("Hola mi nombre es" + nombre + "y tengo" + edad + "años") #Esta sentencia da error ¿por qué?
 
 print("Hola mi nombre es",nombre,"y tengo",edad) #Impresion separando con comas
-print("Hola mi nombre es"+" "+name+" "+"y tengo"+str(edad)) #Concatenación con +
-print(f"Hola mi nombre es {nombre} y tengo {edad} años") #Formato de cadenas literales
+print("Hola mi nombre es"+" "+name+" "+"y tengo"+str(edad)) #Concatenación con signo +
+print(f"Hola mi nombre es {nombre} y tengo {edad} años") #Formato de cadenas literales (f-string)
 
-##05-ACTUALIZANDO LA VARIABLE NOMBRE (Mutable)
+##05-ACTUALIZANDO LA VARIABLE NOMBRE (Mutabilidad)
 nombre = "Diego"
 name = "Benjamin"
 print ("Hola mi nuevo nombre es", nombre)
