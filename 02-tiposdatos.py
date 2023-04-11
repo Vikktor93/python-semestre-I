@@ -36,23 +36,21 @@ print("La cantidad de caracteres de la palabra", carrera, "es de:",len(carrera),
 ampolleta = False
 interruptor = True
 
-#Con type sabemos el tipo de datos que estamos tratando
 print("######## 03-BOOLEANS ########")
 print(ampolleta,interruptor)
-print("La variable ampolleta es de tipo:",type(interruptor),"\n")
+print("La variable ampolleta es de tipo:",type(interruptor),"\n") #Con type sabemos el tipo de datos con el cual estamos trabajando
 
-#04-DATOS TIPO LIST (Objetos de Tipo Colección) - (Mutabilidad)
+#04-DATOS TIPO LIST (Objetos de Tipo Colección) - (Mutables)
 print("######## 04-LISTAS ########")
 
-#Declarando e inicializando una lista
+#Declarando e inicializando listas
 nueva_lista = list()
-print("Esta es una lista vacia:",nueva_lista)
-
 otra_lista = []
+print("Esta es una lista vacia:",nueva_lista)
 print("Esta es otra lista vacia:",otra_lista)
 print(type(otra_lista))
 
-#Declarando otras listas
+#Declarando tres listas diferentes listas
 estudiantes = ["Matias", "Marco", "Cristobal", "Sebastián", "Marco"]
 num = [1,2,3,4,5,6]
 lenguaje = ["Python"]
@@ -64,8 +62,8 @@ print("Lista de cadena de caracteres:",estudiantes)
 print("Lista de números:",num)
 print("Lista de un elemento:",lenguaje)
 print("Esto igual es una lista:",data)
-#print(len(lenguaje)) #Para saber la cantidad de elementos de una lista
-print(estudiantes.count("Marco")) #Cantidad de ocurrencias de un elemento en especifico
+print(len(lenguaje)) #para saber la cantidad de elementos de una lista
+print(estudiantes.count("Marco")) #cantidad de ocurrencias de un elemento en especifico dentro de la lista
 
 lenguaje = ["JavaScript"]
 print("Nuevo valor del Arreglo de un elemento:",lenguaje)
@@ -79,7 +77,7 @@ print("Posicion -2",estudiantes[-2]) #impresión desde atras hacia adelante
 
 #Reasignando el valor de la posición 3 de la lista
 estudiantes[3] = "Gabriela"
-print("El arreglo de estudiantes es:",estudiantes)
+print("El nuevo arreglo de estudiantes es:",estudiantes)
 
 #Inicializando otra lista de datos mixtos
 data_asig = [10023,"Programación",1,True]
@@ -88,16 +86,15 @@ data_asig = [10023,"Programación",1,True]
 cod,ramo,semestre,estado = data_asig
 print(ramo)
 
-
 #¿Se pueden sumar listas?
 print("Suma de listas",estudiantes + num)
 
-#¿Qué hace estas funciones?
+#¿Qué operaciones hacen estas funciones?
 print(list("Python"))
 print(list(range(10)))
 print("\n")
 
-#En el fichero de listas se mostrarán más funciones
+##### En el fichero de listas se mostrarán más funciones #####
 
 #05 - TUPLAS -                                                                                           (No mutables)
 grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
@@ -129,7 +126,7 @@ print(grupo1[2:5])
 
 #grupo1 = list(grupo1)
 #print("La tupla ahora es de tipo:",type(grupo1),"\n")
-
+print("\n")
 
 #06 - SETS (Conjuntos) -                                                                                         Estructura fija
 #Formas de inicializar un Set
@@ -173,7 +170,7 @@ datos_personales = {
     "Asignaturas": {"Estructura de Datos", "Programación"}
     }
 
-print(datos_personales)
+print("Diccionario inicial:",datos_personales)
 
 #Consulta la cantidad de elementos del Diccionario
 print(len(datos_personales))
@@ -183,20 +180,25 @@ print(datos_personales["Institucion"])
 
 #¿Como actualizamos el valor de una clave dentro de un diccionario?
 datos_personales["Institucion"] = "USS" 
-print(datos_personales)
+print("Diccionario actualizado:",datos_personales)
 
 #Agregando un nuevo campo al diccionario
 datos_personales["Ciudad"] = "Osorno"
 print(datos_personales)
+print("Diccionario con el nuevo campo:",datos_personales)
+
+#Eliminando un campo del diccionario
+del datos_personales["Ciudad"]
+print("Diccionario con el campo eliminado:",datos_personales)
 
 
 #08-¿Forzando el tipo de dato?
 universidad: str = "Universidad de Los Lagos"
-universidad = 90
-universidad = True
+#universidad = 90
+#universidad = True
 
 #¿Al final que tipo de dato es la variable universidad?
 
 
 
-
+print("marco" in estudiantes)
