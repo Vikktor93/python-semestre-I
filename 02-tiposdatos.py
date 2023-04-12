@@ -1,4 +1,5 @@
-###GUIA RÁPIDA TIPOS DE DATOS EN PYTHON
+### GUIA RÁPIDA TIPOS DE DATOS EN PYTHON ###
+# Docente: Victor Saldivia Vera - Institución: Universidad de Los Lagos
 
 #01-DATOS DE TIPO NÚMERICO
 edad = 29 #entero
@@ -191,7 +192,6 @@ print("Diccionario con el nuevo campo:",datos_personales)
 del datos_personales["Ciudad"]
 print("Diccionario con el campo eliminado:",datos_personales)
 
-
 #08-¿Forzando el tipo de dato?
 universidad: str = "Universidad de Los Lagos"
 #universidad = 90
@@ -199,6 +199,3 @@ universidad: str = "Universidad de Los Lagos"
 
 #¿Al final que tipo de dato es la variable universidad?
 
-
-
-print("marco" in estudiantes)
