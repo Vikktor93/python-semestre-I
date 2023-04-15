@@ -1,10 +1,10 @@
-### GUIA RÁPIDA TIPOS DE DATOS EN PYTHON ###
+#GUIA RÁPIDA TIPOS DE DATOS EN PYTHON
 # Docente: Victor Saldivia Vera - Institución: Universidad de Los Lagos
 
 #01-DATOS DE TIPO NÚMERICO
 edad = 29 #entero
 estatura = 1.71 #real
-peso = 70.5 #real
+peso = 70.5 
 complejo =  1 + 4j #complejo
 
 print("######## 01-DATOS NÚMERICOS ########");
@@ -21,7 +21,7 @@ print("Transformando un valor entero a real:",float(edad))
 imc = peso / (estatura**2)
 print("Mi IMC es de:",imc,"\n")
 
-print("Mi IMC es de: {:.2f}".format(imc),"\n")
+print("Mi IMC es de: {:.2f}".format(imc),"\n") #formateando el valor de salida a solo 2 decimales
 
 #02-DATOS DE TIPO CADENA DE CARACTERES 
 asignatura = "Programación"
@@ -41,6 +41,14 @@ print("######## 03-BOOLEANS ########")
 print(ampolleta,interruptor)
 print("La variable ampolleta es de tipo:",type(interruptor),"\n") #Con type sabemos el tipo de datos con el cual estamos trabajando
 
+#Podemos cualquier valor y transformarlo a un Booleano
+print(bool(0))
+print(bool(""))
+print(bool(None))
+print(bool("True"))
+print(bool(1))
+print("\n")
+
 #04-DATOS TIPO LIST (Objetos de Tipo Colección) - (Mutables)
 print("######## 04-LISTAS ########")
 
@@ -55,6 +63,7 @@ print(type(otra_lista))
 estudiantes = ["Matias", "Marco", "Cristobal", "Sebastián", "Marco"]
 num = [1,2,3,4,5,6]
 lenguaje = ["Python"]
+
 
 # ¿Se puede realizar una lista de datos compuestos?
 data = ['Osorno', {'UV': 'nivel bajo', 'Temp °C': 15}, (-40.5725, -73.1353)]
@@ -97,7 +106,8 @@ print("\n")
 
 ##### En el fichero de listas se mostrarán más funciones #####
 
-#05 - TUPLAS -                                                                                           (No mutables)
+#05 - TUPLAS - (No mutables)
+newtupla = tuple()
 grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
 print("######## 05-TUPLAS ########")
 print(type(grupo1))
@@ -105,48 +115,47 @@ print(type(grupo1))
 #Accediendo al primer elemento de la tupla
 print(grupo1[0])
 
-#Consultando el elemento "Matias" cuantas veces se encuentra en la tupla
-print(grupo1.count("Daniel"))
+#Consultando el elemento "Daniel" cuantas veces se encuentra en la tupla
+print("El elemento se repite:",grupo1.count("Daniel"))
 
 #Muestra el indice del primer elemento buscado
-print(grupo1.index ("Daniel"))
+print("Indice del elemento:",grupo1.index ("Daniel"))
 
 #Reasignando el primer elemento de la tupla
-#grupo1[0] = "Constanza"
-#print(grupo1)
+"""grupo1[0] = "Constanza"
+print(grupo1)"""
 
 #¿Se pueden sumar las tuplas?
 
 
 #Obteniendo un trozo de la tupla
-print(grupo1[2:5])
+grupo2 = ("Pedro",100,"Felipe","Diego",2020,"Alejandra")
+print("Trozo de la tupla",grupo2[0:3])
 
 #¿Entonces como no puedo modificar una tupla, que puedo hacer?
-
-
-
 #grupo1 = list(grupo1)
 #print("La tupla ahora es de tipo:",type(grupo1),"\n")
 print("\n")
 
-#06 - SETS (Conjuntos) -                                                                                         Estructura fija
+#06 - SETS (Conjuntos) -  Estructura fija
 #Formas de inicializar un Set
+print("######## 06-SETS ########")
 conjunto_vacio = set()
 conjunto_vacio1 = {} #¿diccionario o set?
+print(type(conjunto_vacio1))
 conjunto_colores = set({"Azul","Rojo","Verde"}) #utilizando la funcion set
 conjunto_animales = {"Gato","Perro","Loro"}     #utilizando corchetes
 
-print("######## 06-SETS ########")
 print(type(conjunto_colores)) #tipo de dato set
 print(type(conjunto_animales)) #tipo de dato set
 print("El primer set contiene los siguientes colores:",conjunto_colores)
 print("El segundo set contiene los siguientes animales:",conjunto_animales)
 
-#print(conjunto[0]) #accediendo al primer elemento del set
+#print(conjunto_animales[0]) #accediendo al primer elemento del set
 conjunto_colores.add("Celeste")
 print("El set de colores lo conforman:",conjunto_colores)                                            #un set es una estructura desordenada a diferencia de una Lista
 
-conjunto_animales.add("Gato")
+#conjunto_animales.add("Gato")
 print("El set de animales lo conforman:",conjunto_animales,"\n")                                     #un set no acepta duplicados, a diferencia de las listas que si.
 
 
