@@ -41,7 +41,7 @@ print("######## 03-BOOLEANS ########")
 print(ampolleta,interruptor)
 print("La variable ampolleta es de tipo:",type(interruptor),"\n") #Con type sabemos el tipo de datos con el cual estamos trabajando
 
-#Podemos cualquier valor y transformarlo a un Booleano
+#Podemos transformar cualquier valor a un Booleano (al igual que un string, int, etc)
 print(bool(0))
 print(bool(""))
 print(bool(None))
@@ -52,14 +52,14 @@ print("\n")
 #04-DATOS TIPO LIST (Objetos de Tipo Colección) - (Mutables)
 print("######## 04-LISTAS ########")
 
-#Declarando e inicializando listas
+#Inicializando listas de 2 maneras
 nueva_lista = list()
 otra_lista = []
 print("Esta es una lista vacia:",nueva_lista)
 print("Esta es otra lista vacia:",otra_lista)
 print(type(otra_lista))
 
-#Declarando tres listas diferentes listas
+#Declarando tres listas diferentes
 estudiantes = ["Matias", "Marco", "Cristobal", "Sebastián", "Marco"]
 num = [1,2,3,4,5,6]
 lenguaje = ["Python"]
@@ -79,32 +79,32 @@ lenguaje = ["JavaScript"]
 print("Nuevo valor del Arreglo de un elemento:",lenguaje)
 
 #¿Como accedo a un elemento especifico de la lista?
-print(estudiantes[0]) #correcto (primer elemento de la lista)
-print(estudiantes[1]) #segundo elemento de la lista
+print(estudiantes[0]) #correcto (1° elemento de la lista)
+print(estudiantes[1]) #(2° elemento de la lista)
 #print(estudiantes[5]) #incorrecto
 print("Posicion -2",estudiantes[-2]) #impresión desde atras hacia adelante
 
 
-#Reasignando el valor de la posición 3 de la lista
+#Reasignando el valor de la 3° posicion de la lista
 estudiantes[3] = "Gabriela"
 print("El nuevo arreglo de estudiantes es:",estudiantes)
 
 #Inicializando otra lista de datos mixtos
 data_asig = [10023,"Programación",1,True]
 
-#¿Que hace este código?                                                                       #Desempaquetando elementos de la lista a variables
+#¿Que hace este código?    #Desempaquetando elementos de la lista (data_asig) a variables
 cod,ramo,semestre,estado = data_asig
 print(ramo)
 
 #¿Se pueden sumar listas?
 print("Suma de listas",estudiantes + num)
 
-#¿Qué operaciones hacen estas funciones?
+#¿Qué hacen estas funciones?
 print(list("Python"))
 print(list(range(10)))
 print("\n")
 
-##### En el fichero de listas se mostrarán más funciones #####
+# > En el fichero de listas se mostrarán más funciones 
 
 #05 - TUPLAS - (No mutables)
 newtupla = tuple()
