@@ -15,6 +15,8 @@ Todo esto para adentrarse poco a poco en el mundo de la programación con Python
 También se incluirá el uso de condicionales y ciclos para la lógica de diferentes
 algoritmos y los distintos tipos de datos.
 
+Se irá actualizando el contenido de este repositorio durante el primer semestre de este año 2023.
+
 ## Enlaces de Interés
 
 - Web oficial de Python [(Instalacion Python)][python]
