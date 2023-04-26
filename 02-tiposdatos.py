@@ -12,6 +12,7 @@ print(f"Mi estatura es de {estatura} y mi peso es de {peso}")
 print("Impresion de un número complejo:",complejo,"\n")
 
 #Transformando un real a entero
+print(peso)
 print("Transformando un valor real a entero:",int(peso))
 
 #Transformando un entero a real
@@ -19,12 +20,12 @@ print("Transformando un valor entero a real:",float(edad))
 
 #OPERACION ARITMETICA BÁSICA
 imc = peso / (estatura**2)
-print("Mi IMC es de:",imc,"\n")
+print("Mi IMC es de:{imc}\n")
 
-print("Mi IMC es de: {:.2f}".format(imc),"\n") #formateando el valor de salida a solo 2 decimales
+print("Mi IMC es de: {:.5f}".format(imc),"\n") #formateando el valor de salida a solo 2 decimales
 
 #02-DATOS DE TIPO CADENA DE CARACTERES 
-asignatura = "Programación"
+asignatura = 'Programacion'
 carrera = "Ingenieria Civil en Informática"
 print("######## 02-STRINGS ########")
 print("La asignatura de",asignatura,"corresponde a la carrera de",carrera)
@@ -61,19 +62,22 @@ print(type(otra_lista))
 
 #Declarando tres listas diferentes
 estudiantes = ["Matias", "Marco", "Cristobal", "Sebastián", "Marco"]
-num = [1,2,3,4,5,6]
+num = [1,2,3,4,5,6,1]
 lenguaje = ["Python"]
 
 
 # ¿Se puede realizar una lista de datos compuestos?
 data = ['Osorno', {'UV': 'nivel bajo', 'Temp °C': 15}, (-40.5725, -73.1353)]
+listamixta = ['Felipe', 100, True]
 
 print("Lista de cadena de caracteres:",estudiantes)
 print("Lista de números:",num)
 print("Lista de un elemento:",lenguaje)
+print("Esta es una lista mixta:", listamixta)
 print("Esto igual es una lista:",data)
-print(len(lenguaje)) #para saber la cantidad de elementos de una lista
-print(estudiantes.count("Marco")) #cantidad de ocurrencias de un elemento en especifico dentro de la lista
+print(len(listamixta)) #para saber la cantidad de elementos de una lista
+print(estudiantes.count("Pepe"))
+print(num.count(5000))  #cantidad de ocurrencias de un elemento en especifico dentro de la lista
 
 lenguaje = ["JavaScript"]
 print("Nuevo valor del Arreglo de un elemento:",lenguaje)
@@ -81,8 +85,8 @@ print("Nuevo valor del Arreglo de un elemento:",lenguaje)
 #¿Como accedo a un elemento especifico de la lista?
 print(estudiantes[0]) #correcto (1° elemento de la lista)
 print(estudiantes[1]) #(2° elemento de la lista)
-#print(estudiantes[5]) #incorrecto
-print("Posicion -2",estudiantes[-2]) #impresión desde atras hacia adelante
+#print(estudiantes[6]) #incorrecto
+print("Posicion -2",estudiantes[-2])                                    #impresión desde atras hacia adelante
 
 
 #Reasignando el valor de la 3° posicion de la lista
