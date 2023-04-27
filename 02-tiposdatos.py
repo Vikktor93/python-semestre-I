@@ -20,9 +20,9 @@ print("Transformando un valor entero a real:",float(edad))
 
 #OPERACION ARITMETICA BÁSICA
 imc = peso / (estatura**2)
-print("Mi IMC es de:{imc}\n")
+print(f"Mi IMC es de:{imc}\n")
 
-print("Mi IMC es de: {:.5f}".format(imc),"\n") #formateando el valor de salida a solo 2 decimales
+print("Mi IMC es de: {:.2f}".format(imc),"\n") #formateando el valor de salida a solo 2 decimales
 
 #02-DATOS DE TIPO CADENA DE CARACTERES 
 asignatura = 'Programacion'
@@ -46,7 +46,7 @@ print("La variable ampolleta es de tipo:",type(interruptor),"\n") #Con type sabe
 print(bool(0))
 print(bool(""))
 print(bool(None))
-print(bool("True"))
+print(bool("False"))
 print(bool(1))
 print("\n")
 
@@ -76,7 +76,7 @@ print("Lista de un elemento:",lenguaje)
 print("Esta es una lista mixta:", listamixta)
 print("Esto igual es una lista:",data)
 print(len(listamixta)) #para saber la cantidad de elementos de una lista
-print(estudiantes.count("Pepe"))
+print(estudiantes.count("Marco"))
 print(num.count(5000))  #cantidad de ocurrencias de un elemento en especifico dentro de la lista
 
 lenguaje = ["JavaScript"]
@@ -86,7 +86,7 @@ print("Nuevo valor del Arreglo de un elemento:",lenguaje)
 print(estudiantes[0]) #correcto (1° elemento de la lista)
 print(estudiantes[1]) #(2° elemento de la lista)
 #print(estudiantes[6]) #incorrecto
-print("Posicion -2",estudiantes[-2])                                    #impresión desde atras hacia adelante
+print("Posicion -2",estudiantes[-2]) #impresión desde atras hacia adelante
 
 
 #Reasignando el valor de la 3° posicion de la lista
@@ -105,7 +105,7 @@ print("Suma de listas",estudiantes + num)
 
 #¿Qué hacen estas funciones?
 print(list("Python"))
-print(list(range(10)))
+print(list(range(1,3)))
 print("\n")
 
 # > En el fichero de listas se mostrarán más funciones 
@@ -157,10 +157,10 @@ print("El segundo set contiene los siguientes animales:",conjunto_animales)
 
 #print(conjunto_animales[0]) #accediendo al primer elemento del set
 conjunto_colores.add("Celeste")
-print("El set de colores lo conforman:",conjunto_colores)                                            #un set es una estructura desordenada a diferencia de una Lista
+print("El set de colores lo conforman:",conjunto_colores)  #un set es una estructura desordenada a diferencia de una Lista
 
 #conjunto_animales.add("Gato")
-print("El set de animales lo conforman:",conjunto_animales,"\n")                                     #un set no acepta duplicados, a diferencia de las listas que si.
+print("El set de animales lo conforman:",conjunto_animales,"\n")  #un set no acepta duplicados, a diferencia de las listas que si.
 
 
 #07 - DICCIONARIOS (Clave-Valor)
@@ -205,10 +205,4 @@ print("Diccionario con el nuevo campo:",datos_personales)
 del datos_personales["Ciudad"]
 print("Diccionario con el campo eliminado:",datos_personales)
 
-#08-¿Forzando el tipo de dato?
-universidad: str = "Universidad de Los Lagos"
-#universidad = 90
-#universidad = True
-
-#¿Al final que tipo de dato es la variable universidad?
 
