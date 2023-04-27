@@ -68,13 +68,12 @@ print(a > b)  #mayor que
 print(a < b)  #menor que
 print(c >= d) #mayor o igual que
 print(c <= d) #menor o igual que
-print("\n")
 
 #Comparando cadenas de caracteres
 animal_domestico = "gato"
 animal_salvaje= "leopardo"
 
-print("Comparando Cadenas de Caracteres")
+print("\nComparando Cadenas de Caracteres")
 print(animal_domestico == animal_salvaje)   #igual a
 print(animal_domestico != animal_salvaje)   #desigual a
 print(animal_domestico > animal_salvaje)    #mayor que
