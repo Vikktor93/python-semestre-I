@@ -27,8 +27,12 @@ print("Mi IMC es de: {:.2f}".format(imc),"\n") #formateando el valor de salida a
 #02-DATOS DE TIPO CADENA DE CARACTERES 
 asignatura = 'Programacion'
 carrera = "Ingenieria Civil en Informática"
+descripcion = '''La asignatura de programación se imparte en el primer semestre, tiene por objetivo
+entregar la base lógica para cualquier estudiante que comience a familiatizarse con la programación'''
+
 print("######## 02-STRINGS ########")
-print("La asignatura de",asignatura,"corresponde a la carrera de",carrera)
+print("La asignatura de",asignatura,"corresponde a la carrera de", carrera)
+print(descripcion[12])
 
 #Utilizando la función len (cuenta la cantidad de caracteres)
 print("La cantidad de caracteres de la palabra", asignatura, "es de:",len(asignatura))
@@ -45,9 +49,9 @@ print("La variable ampolleta es de tipo:",type(interruptor),"\n") #Con type sabe
 #Podemos transformar cualquier valor a un Booleano (al igual que un string, int, etc)
 print(bool(0))
 print(bool(""))
-print(bool(None))
+print(bool([]))  
 print(bool("False"))
-print(bool(1))
+print(bool(1)) 
 print("\n")
 
 #04-DATOS TIPO LIST (Objetos de Tipo Colección) - (Mutables)
@@ -204,5 +208,4 @@ print("Diccionario con el nuevo campo:",datos_personales)
 #Eliminando un campo del diccionario
 del datos_personales["Ciudad"]
 print("Diccionario con el campo eliminado:",datos_personales)
-
 
