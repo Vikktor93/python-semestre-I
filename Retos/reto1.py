@@ -1,4 +1,4 @@
-""" Imprimir un string que muestre un mensaje en la terminal. 
+""" RETO 1: Imprimir un string que muestre un mensaje en la terminal. 
 Este mensaje deberá tener el siguiente formato: """
 
 #    > Hola mi nombre es {nombre}, tengo {edad} años y en 20 años tendré {total_edad} años
