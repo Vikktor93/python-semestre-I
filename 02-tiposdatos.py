@@ -1,5 +1,5 @@
-#GUIA RÁPIDA TIPOS DE DATOS EN PYTHON
-# Docente: Victor Saldivia Vera - Institución: Universidad de Los Lagos
+"""GUIA RÁPIDA TIPOS DE DATOS EN PYTHON
+Docente: Victor Saldivia Vera - Institución: Universidad de Los Lagos"""
 
 #01-DATOS DE TIPO NÚMERICO
 edad = 29 #entero
@@ -159,10 +159,10 @@ print("El segundo set contiene los siguientes animales:",conjunto_animales)
 
 #print(conjunto_animales[0]) #accediendo al primer elemento del set
 conjunto_colores.add("Celeste")
-print("El set de colores lo conforman:",conjunto_colores)                                #un set es una estructura desordenada a diferencia de una Lista
+print("El set de colores lo conforman:",conjunto_colores)  #un set es una estructura desordenada a diferencia de una Lista
 
 #conjunto_animales.add("Gato")
-print("El set de animales lo conforman:",conjunto_animales,"\n")                            #un set no acepta duplicados, a diferencia de las listas que si.
+print("El set de animales lo conforman:",conjunto_animales,"\n") #un set no acepta duplicados, a diferencia de las listas que si.
 
 
 #07 - DICCIONARIOS (Clave-Valor)
