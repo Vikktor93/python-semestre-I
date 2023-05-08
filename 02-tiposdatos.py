@@ -58,17 +58,16 @@ print("\n")
 print("######## 04-LISTAS ########")
 
 #Inicializando listas de 2 maneras
-nueva_lista = list()
-otra_lista = []
+nueva_lista = list()              
+otra_lista = []                 
 print("Esta es una lista vacia:",nueva_lista)
 print("Esta es otra lista vacia:",otra_lista)
 print(type(otra_lista))
 
 #Declarando tres listas diferentes
 estudiantes = ["Matias", "Marco", "Cristobal", "Sebastián", "Marco"]
-num = [1,2,3,4,5,6,1]
-lenguaje = ["Python"]
-
+num = [1,2,3,4,5,6,1]             
+lenguaje = list(["Python","Dart"])
 
 # ¿Se puede realizar una lista de datos compuestos?
 data = ['Osorno', {'UV': 'nivel bajo', 'Temp °C': 15}, (-40.5725, -73.1353)]
@@ -80,7 +79,7 @@ print("Lista de un elemento:",lenguaje)
 print("Esta es una lista mixta:", listamixta)
 print("Esto igual es una lista:",data)
 print(len(listamixta)) #para saber la cantidad de elementos de una lista
-print(estudiantes.count("Marco"))
+print(estudiantes.count("Marco"))   
 print(num.count(5000))  #cantidad de ocurrencias de un elemento en especifico dentro de la lista
 
 lenguaje = ["JavaScript"]
@@ -90,8 +89,7 @@ print("Nuevo valor del Arreglo de un elemento:",lenguaje)
 print(estudiantes[0]) #correcto (1° elemento de la lista)
 print(estudiantes[1]) #(2° elemento de la lista)
 #print(estudiantes[6]) #incorrecto
-print("Posicion -2",estudiantes[-2]) #impresión desde atras hacia adelante
-
+print("Posicion -2 de la lista estudiantes:",estudiantes[-2]) #impresión desde atras hacia adelante
 
 #Reasignando el valor de la 3° posicion de la lista
 estudiantes[3] = "Gabriela"
@@ -105,11 +103,11 @@ cod,ramo,semestre,estado = data_asig
 print(ramo)
 
 #¿Se pueden sumar listas?
-print("Suma de listas",estudiantes + num)
+print("Suma de listas:",estudiantes + num)
 
 #¿Qué hacen estas funciones?
 print(list("Python"))
-print(list(range(1,3)))
+print(list(range(10))) #genera una lista 10 elementos
 print("\n")
 
 # > En el fichero de listas se mostrarán más funciones 
@@ -141,8 +139,8 @@ grupo2 = ("Pedro",100,"Felipe","Diego",2020,"Alejandra")
 print("Trozo de la tupla",grupo2[0:3])
 
 #¿Entonces como no puedo modificar una tupla, que puedo hacer?
-#grupo1 = list(grupo1)
-#print("La tupla ahora es de tipo:",type(grupo1),"\n")
+grupo1 = list(grupo1)
+print("La tupla ahora es de tipo:",type(grupo1),"\n")
 print("\n")
 
 #06 - SETS (Conjuntos) -  Estructura fija
@@ -152,7 +150,7 @@ conjunto_vacio = set()
 conjunto_vacio1 = {} #¿diccionario o set?
 print(type(conjunto_vacio1))
 conjunto_colores = set({"Azul","Rojo","Verde"}) #utilizando la funcion set
-conjunto_animales = {"Gato","Perro","Loro"}     #utilizando corchetes
+conjunto_animales = {"Gato","Perro","Loro"}     #utilizando llaves
 
 print(type(conjunto_colores)) #tipo de dato set
 print(type(conjunto_animales)) #tipo de dato set
@@ -161,10 +159,10 @@ print("El segundo set contiene los siguientes animales:",conjunto_animales)
 
 #print(conjunto_animales[0]) #accediendo al primer elemento del set
 conjunto_colores.add("Celeste")
-print("El set de colores lo conforman:",conjunto_colores)  #un set es una estructura desordenada a diferencia de una Lista
+print("El set de colores lo conforman:",conjunto_colores)                                #un set es una estructura desordenada a diferencia de una Lista
 
 #conjunto_animales.add("Gato")
-print("El set de animales lo conforman:",conjunto_animales,"\n")  #un set no acepta duplicados, a diferencia de las listas que si.
+print("El set de animales lo conforman:",conjunto_animales,"\n")                            #un set no acepta duplicados, a diferencia de las listas que si.
 
 
 #07 - DICCIONARIOS (Clave-Valor)
@@ -200,7 +198,7 @@ print(datos_personales["Institucion"])
 datos_personales["Institucion"] = "USS" 
 print("Diccionario actualizado:",datos_personales)
 
-#Agregando un nuevo campo al diccionario
+#Agregando un nuevo clave al diccionario
 datos_personales["Ciudad"] = "Osorno"
 print(datos_personales)
 print("Diccionario con el nuevo campo:",datos_personales)

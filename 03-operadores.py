@@ -59,9 +59,6 @@ print("Hola" * (int((10 * 2) / 5)),"\n")
 
 #02-OPERADORES DE COMPARACIÓN
 print("######## 02-OPERADORES DE COMPARACIÓN ########")
-
-#Comparando términos númericos
-print("Comparando Números")
 print(a == b) #igual a
 print(a != b) #desigual a
 print(a > b)  #mayor que
@@ -72,7 +69,6 @@ print(c <= d) #menor o igual que
 #Comparando cadenas de caracteres
 animal_domestico = "gato"
 animal_salvaje= "leopardo"
-
 print("\nComparando Cadenas de Caracteres")
 print(animal_domestico == animal_salvaje)   #igual a
 print(animal_domestico != animal_salvaje)   #desigual a
@@ -113,7 +109,7 @@ else:
 
 #Utilizando el operador NOT junto al OR
 if not bencina or encendido:
-    print("El vehiculo puede avanzar")
+    print("Utilizando NOT Y OR:  El vehiculo puede avanzar")
 else:
     print("El vehiculo no puede arrancar")
 

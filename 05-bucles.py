@@ -6,14 +6,16 @@
 edad = 15
 num = 0
 
-#while edad > 18:
-   # print("Eres menor de edad, no puedes manejar")
+#bucle infito
+"""while edad < 18:
+    print("Eres menor de edad, no puedes manejar")"""
 
 #¿Qué hace este bucle?
 print("############ 01 - CICLO WHILE ############")
 while num <= 100:
     print(num)
     num += 2
+    #num = num + 2
 print("Primer Bucle terminado!\n")
 
 #Combinando While y else
