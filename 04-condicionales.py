@@ -8,19 +8,25 @@ licencia = False
 edad = 19
 automovil = False
 
+#¿Estará correcto este código?                                                       - Código Incorrecto  
+"""if licencia == True:
+    print('Puedo conducir porque tengo licencia')
+else:
+    print('No tengo licencia para conducir')"""
+
+
+
+
+
+#Sucede que la variable licencia se esta comparando con True,
+#y se debe asignar directamente, es decir no se ocupa el ==, sino solamente el igual (=)
+
 print('######## Utilizando el primer condicional IF ########')
 if licencia:
     print('Puedo conducir porque tengo licencia\n')
 else:
     print('No tengo licencia para conducir\n')
 """print("Este print fuera del else")"""
-
-
-#¿Estará correcto este código?    
-"""if licencia == True:
-    print('Puedo conducir porque tengo licencia')
-else:
-    print('No tengo licencia para conducir')"""
 
 
 print('######## Utilizando el segundo condicional IF ########')
@@ -44,4 +50,5 @@ elif automovil:
     print('Tengo automovil, pero no tengo licencia ni la edad necesaria')
 else:
     print('No puedo conducir no tengo ni la edad, ni licencia ni automovil')
-    
+
+
