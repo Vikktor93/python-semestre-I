@@ -38,6 +38,7 @@ print(type(c1))
 
 #Creando un número complejo con complex
 c2 = complex(3, -5)
+
 print("El numero complejo es:",c2)
 
 print(c2.real) #Obteniendo la parte real del número complejo
@@ -86,7 +87,7 @@ print("######## 03-OPERADORES LÓGICOS ########")
 #estado de cada variable, se irá cambiando por False o True
 
 bencina = True
-encendido = True
+encendido = False
 edad = 19
 
 #Utilizando el operador AND
