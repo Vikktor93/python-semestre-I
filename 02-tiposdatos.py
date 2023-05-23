@@ -113,7 +113,7 @@ print("\n")
 # > En el fichero de listas se mostrarán más funciones 
 
 #05 - TUPLAS - (No mutables)
-newtupla = tuple()
+newtupla = tuple()                     
 grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
 print("######## 05-TUPLAS ########")
 print(type(grupo1))
@@ -146,8 +146,8 @@ print("\n")
 #06 - SETS (Conjuntos) -  Estructura fija
 #Formas de inicializar un Set
 print("######## 06-SETS ########")
-conjunto_vacio = set()
-conjunto_vacio1 = {} #¿diccionario o set?
+conjunto_vacio = set()           
+conjunto_vacio1 = {}  #¿diccionario o set?
 print(type(conjunto_vacio1))
 conjunto_colores = set({"Azul","Rojo","Verde"}) #utilizando la funcion set
 conjunto_animales = {"Gato","Perro","Loro"}     #utilizando llaves
@@ -207,3 +207,8 @@ print("Diccionario con el nuevo campo:",datos_personales)
 del datos_personales["Ciudad"]
 print("Diccionario con el campo eliminado:",datos_personales)
 
+hospital = dict(
+    nombre = "Hospital San Jose",
+    direccion = "Dr. Guillermo Buhler 1765",
+    ciudad = "Osorno"
+)
