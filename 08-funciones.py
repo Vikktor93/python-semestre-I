@@ -20,11 +20,21 @@ def concatenar(lista1,lista2):
 lista1 = [1,2,3]
 lista2 = [4,5,6]
 
+#concatenar()
 print(concatenar(lista1,lista2));
 
+#03-DECLARANDO UNA FUNCIÓN MULTIPLICACION PASANDO PARAMETROS
+print("\n################## 03-DECLARANDO UNA FUNCIÓN MULTIPLICACION PASANDO PARAMETROS ##################")
 
-#02-EJEMPLO DE UNA FUNCIÓN
-print("\n################## FUNCIONES SUMA Y RESTA ##################")
+def multiplicacion (num1,num2):
+    return num1*num2
+
+#multiplicacion()
+print(multiplicacion(10,2))
+
+
+#04-EJEMPLO DE UNA FUNCIÓN
+print("\n################## 04-FUNCIONES SUMA Y RESTA (POR TECLADO) ##################")
 
 def suma(a, b):
     return a + b
@@ -32,7 +42,7 @@ def suma(a, b):
 def resta(a, b):
     return a - b
 
-a = int(input("\nIngrese el valor de a: "))
+a = int(input("Ingrese el valor de a: "))
 b = int(input("Ingrese el valor de b: "))
 
 #Se llama a la función Suma
