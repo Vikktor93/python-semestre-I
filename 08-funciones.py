@@ -3,7 +3,7 @@
 
 
 #01-DECLARANDO LA PRIMERA FUNCIÓN
-print("################## 01-DECLARANDO LA PRIMERA FUNCIÓN ##################")
+print("################## 01-DECLARANDO UNA FUNCIÓN SIMPLE ##################")
 
 def mi_primera_funcion():
     print("Esta es mi primera función")
@@ -30,7 +30,7 @@ def multiplicacion (num1,num2):
     return num1*num2
 
 #multiplicacion()
-print(multiplicacion(10,2))
+print(multiplicacion(5,5))
 
 
 #04-EJEMPLO DE UNA FUNCIÓN
