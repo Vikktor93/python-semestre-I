@@ -5,11 +5,15 @@ Docente: Victor Saldivia Vera - Institución: Universidad de Los Lagos"""
 edad = 29 #entero
 estatura = 1.71 #real
 peso = 70.5 
-complejo =  1 + 4j #complejo
+complejo =  1 + 4j #declarando complejo
+comp = complex(9,10) #otra forma de declarar complejo
 
 print("######## 01-DATOS NÚMERICOS ########");
 print(f"Mi estatura es de {estatura} y mi peso es de {peso}")
 print("Impresion de un número complejo:",complejo,"\n")
+print("Parte real: ", complejo.real)
+print("Parte imaginaria: ", complejo.imag)
+print("Impresión de Complex:", comp)
 
 #Transformando un real a entero
 print(peso)
