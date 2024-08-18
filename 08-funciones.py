@@ -1,4 +1,4 @@
-#GUIA RÁPIDA BUCLESS/CICLOS EN PYTHON
+#GUIA RÁPIDA FUNCIONES EN PYTHON
 #Docente: Victor Saldivia Vera - Institución: Universidad de Los Lagos
 
 
@@ -82,6 +82,3 @@ def saludar(nombre, mensaje):
     print(mensaje + " " + nombre)
 
 saludar(mensaje="Hola,", nombre="Juan")  #Argumentos pasados por nombre
-
-
-
